@@ -2,8 +2,7 @@ FROM centos:centos7
 MAINTAINER Alfredo Matas "amatas@gmail.com"
 
 # Enable EPEL for CouchDB
-RUN yum -y upgrade && \
-    yum -y install epel-release && \
+RUN yum -y install epel-release && \
     yum clean all
 
 # Install CouchDB
